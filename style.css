@@ -1,4 +1,13 @@
 /* Estilos generales */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Fondo gris oscuro uniforme */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header */
 header {
     background-color: #222;
     color: white;
@@ -12,6 +21,7 @@ header {
     align-items: center;
 }
 
+/* Menú */
 nav {
     display: flex;
     justify-content: center;
@@ -72,11 +82,12 @@ nav ul li a {
     }
 }
 
-/*tabla villanos*/
+/* Tabla villanos */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: #1e1e1e; /* Asegura que la tabla no sea blanca */
 }
 
 th, td {
@@ -96,9 +107,7 @@ td img {
     border-radius: 10px;
 }
 
-
-/*diseño principal*/
-
+/* Diseño principal */
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -140,6 +149,7 @@ li p {
     font-size: 16px;
 }
 
+/* Imágenes dentro del contenido principal */
 main img {
     max-width: 100%;
     height: auto;
