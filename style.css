@@ -1,0 +1,141 @@
+/* Estilos generales */
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive: cuando la pantalla es pequeña */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu-toggle {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu li {
+        margin: 10px 0;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+}
+
+/*tabla villanos*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+td img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/*diseño principal*/
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+li {
+    background-color: #292929;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+}
+
+li strong {
+    color: #ff4500;
+    font-size: 20px;
+}
+
+li p {
+    margin: 5px 0 0;
+    color: #cccccc;
+    font-size: 16px;
+}

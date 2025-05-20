@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universos</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("/src/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+
+<main>
+    <h2>Universos en My Hero Academia</h2>
+
+    <section>
+        <h3>Academia U.A.</h3>
+        <p>Es la escuela de héroes más prestigiosa de Japón, donde los estudiantes entrenan para convertirse en profesionales. Tiene diversas instalaciones como dormitorios, campos de entrenamiento y simuladores de batalla.</p>
+    </section>
+
+    <section>
+        <h3>La Liga de Villanos</h3>
+        <p>Un grupo de villanos liderado por Tomura Shigaraki. Su objetivo es acabar con la sociedad de héroes y sumir el mundo en el caos.</p>
+    </section>
+
+    <section>
+        <h3>Los Héroes Profesionales</h3>
+        <p>Son héroes con licencia que trabajan protegiendo a la sociedad del crimen. Entre ellos se encuentran All Might, Endeavor y Hawks.</p>
+    </section>
+
+    <section>
+        <h3>La Comisión de Seguridad Pública de Héroes</h3>
+        <p>Es una organización gubernamental que regula y supervisa las actividades de los héroes, asegurando que actúen conforme a la ley.</p>
+    </section>
+
+    <section>
+        <h3>Las Escuelas de Héroes</h3>
+        <p>Además de la U.A., existen otras instituciones donde los jóvenes entrenan para convertirse en héroes, como la Shiketsu High School.</p>
+    </section>
+
+    <section>
+        <h3>Los Nomu</h3>
+        <p>Son seres artificiales creados a partir de experimentos con quirks múltiples. Son usados por la Liga de Villanos como armas de batalla.</p>
+    </section>
+</main>
+
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcos</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("/src/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+<main>
+    <section>
+        <h2>Arcos de My Hero Academia</h2>
+        <ol>
+            <li>
+                <strong>Arco de la Examen de Admisión</strong>
+                <p>Izuku Midoriya participa en el examen para entrar a la Academia U.A. y demuestra su determinación al usar el One For All por primera vez.</p>
+            </li>
+            <li>
+                <strong>Arco del Festival Deportivo</strong>
+                <p>Los estudiantes de la U.A. compiten en una serie de desafíos para mostrar sus habilidades ante los héroes profesionales.</p>
+            </li>
+            <li>
+                <strong>Arco del Asalto al USJ</strong>
+                <p>La Liga de Villanos ataca el Centro de Simulación de Desastres (USJ), obligando a los estudiantes a luchar por sus vidas.</p>
+            </li>
+            <li>
+                <strong>Arco del Viaje Escolar</strong>
+                <p>Los alumnos de la Clase 1-A entrenan en el bosque, pero son atacados por la Liga de Villanos, resultando en el secuestro de Bakugo.</p>
+            </li>
+            <li>
+                <strong>Arco de la Licencia Provisional</strong>
+                <p>Los estudiantes participan en un examen para obtener su licencia de héroe provisional, enfrentando nuevos desafíos y rivales.</p>
+            </li>
+            <li>
+                <strong>Arco de Overhaul</strong>
+                <p>Los héroes se enfrentan a la organización Yakuza liderada por Overhaul para rescatar a la pequeña Eri de sus experimentos.</p>
+            </li>
+            <li>
+                <strong>Arco del Festival Cultural</strong>
+                <p>La U.A. organiza un festival escolar para levantar el ánimo de los estudiantes, mientras que Deku enfrenta a Gentle Criminal.</p>
+            </li>
+            <li>
+                <strong>Arco del Asalto al Frente de Liberación Paranormal</strong>
+                <p>Los héroes lanzan un ataque a gran escala contra la nueva organización de Shigaraki, desatando una guerra devastadora.</p>
+            </li>
+            <li>
+                <strong>Arco del Héroe Oscuro</strong>
+                <p>Deku deja la U.A. y opera en solitario para detener a los villanos, mientras sus amigos intentan traerlo de vuelta.</p>
+            </li>
+            <li>
+                <strong>Arco de la Guerra Final</strong>
+                <p>Los héroes y villanos libran la batalla definitiva por el destino del mundo, con Midoriya enfrentando a Shigaraki en un combate épico.</p>
+            </li>
+        </ol>
+    </section>
+</main>
+
+
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+</html>

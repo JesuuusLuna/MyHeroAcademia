@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("/src/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+<main>
+    <section>
+        <h2>Academia U.A. - My Hero Academia</h2>
+        <p>
+            La Academia U.A. es una institución educativa en el mundo de *My Hero Academia* donde los estudiantes se entrenan para convertirse en héroes profesionales. 
+            Es una de las escuelas más prestigiosas, conocida por su enfoque en la formación de jóvenes con quirks para proteger a la sociedad de los villanos. 
+            Los estudiantes de la U.A. aprenden habilidades físicas, estratégicas y éticas para convertirse en héroes que protejan a la humanidad. 
+            La academia es famosa por su especialización en quirks y por contar con el legendario héroe All Might como uno de sus profesores.
+        </p>
+        <img src="/src/img/ua_academy.webp" alt="Academia U.A.">
+    </section>
+</main>
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+
+</body>
+</html>

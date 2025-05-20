@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hero Academia</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("/src/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+    <main>
+        <section>
+            <h2>Historia</h2>
+            <p>En un mundo donde el 80% de la población tiene superpoderes llamados Quirks, 
+                Izuku Midoriya, un joven sin poderes, sueña con convertirse en el héroe número 
+                uno. Su vida cambia cuando el legendario héroe All Might le otorga su Quirk, One 
+                For All. Ahora, Izuku debe entrenar en la Academia U.A., la mejor escuela de héroes,
+                 enfrentando desafíos, enemigos y su propio crecimiento como héroe.</p>
+            <img src="/src/img/MyHeroAcademiaLogo.jpg" alt="Imagen representativa de la historia">
+        </section>
+
+        <section>
+            <h2>Personajes Principales</h2>
+            <ul>
+                <li>Izuku Midoriya</li> <img src="/src/img/izukuMioriya.jpg" alt="izuku Mioriya">
+                <li>Katsuki Bakugo</li> <img src="/src/img/Katsuki bakugo.jpg" alt="Katsuki Bakugo">
+                <li>All Might</li> <img src="/src/img/allMight.jpg" alt="all Might">
+                <li>Shoto Todoroki</li> <img src="/src/img/ShotoTodoroki.jpg" alt="Shoto Todoroki">
+            </ul>
+        </section>
+
+        <section>
+            <h2>Enlaces Relacionados</h2>
+            <p>Más información sobre My Hero Academia:</p>
+            <ul>
+                <li><a href="https://www.crunchyroll.com/es/series/GMEHME5WK/my-hero-academia-movies" target="_blank">Ver en Crunchyroll</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/My_Hero_Academia" target="_blank">Artículo en Wikipedia</a></li>
+            </ul>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>
